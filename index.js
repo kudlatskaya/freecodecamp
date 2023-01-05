@@ -62,3 +62,14 @@ class Thermostat {
   makeServerRequest.then(result => {
     console.log(result);
   })
+
+  function sumAll(arr) {
+    arr.sort(( a, b ) =>  a - b);
+    [a, b] = arr;
+    let sum = 0;
+  
+    for(let i = a; i < b; i++) {
+      sum += i;  
+    }
+    return sum;
+  }
