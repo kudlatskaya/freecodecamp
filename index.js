@@ -43,10 +43,10 @@ class Thermostat {
   
   const thermos = new Thermostat(76); // Setting in Fahrenheit scale
   let temp = thermos.temperature; // 24.44 in Celsius
-  console.log(temp);
+ // console.log(temp);
   thermos.temperature = 26;
   temp = thermos.temperature; // 26 in Celsius
-  console.log(temp);
+  //console.log(temp);
 
   const makeServerRequest = new Promise((resolve, reject) => {
     // responseFromServer is set to true to represent a successful response from a server
@@ -60,16 +60,46 @@ class Thermostat {
   });
   
   makeServerRequest.then(result => {
-    console.log(result);
+    //console.log(result);
   })
 
   function sumAll(arr) {
     arr.sort(( a, b ) =>  a - b);
-    [a, b] = arr;
+    let [a, b] = arr;
     let sum = 0;
   
-    for(let i = a; i < b; i++) {
+    for(let i = a; i <= b; i++) {
       sum += i;  
     }
     return sum;
   }
+  
+  //console.log(sumAll([1, 4]));
+
+  function diffArray(arr1, arr2) {
+    const newArr = [];
+    let arr = [...arr1, ...arr2];
+    let k = 0;
+    let coincidence;
+  
+    for(let i = 0; i < arr.length; i++) {
+      coincidence = false;
+
+      for(let j = i + 1; j < arr.length; j++) {
+        if(arr[i] == arr[j]) { //console.log(arr[i]);
+          arr[i] = 0;
+          arr[j] = 0;
+        }
+      }
+    }
+    for(let i = 0; i < arr.length; i++) {
+      if(arr[i] != 0) { 
+        newArr[k] = arr[i];
+        k++;
+      }
+    }
+
+    return newArr;
+  }
+
+  console.log(diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]));
