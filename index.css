@@ -261,3 +261,8 @@ body {
 grid-column: 2 / 4;
 grid-row: 2/4;
   }
+
+  .d2 {
+    background: LightSalmon;
+  justify-self: center;
+  }
