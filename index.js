@@ -135,3 +135,5 @@ class Thermostat {
     this.color = "blue";
     this.numLegs = 4;
   }
+
+  let hound = new Dog();
