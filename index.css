@@ -266,3 +266,8 @@ grid-row: 2/4;
     background: LightSalmon;
   justify-self: center;
   }
+
+  .d3 {
+    background: PaleTurquoise;
+   align-self: end;
+  }
