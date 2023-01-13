@@ -103,3 +103,11 @@ class Thermostat {
   }
 
   console.log(diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]));
+
+  let dog = {
+    name: "Spot",
+    numLegs: 4
+  };
+  // Only change code below this line
+  console.log(dog.name);
+  console.log(dog.numLegs);
