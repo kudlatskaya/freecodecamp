@@ -262,7 +262,7 @@ body {
 
   .d5 {
     background: PaleGreen;
-
+    grid-area: footer;
 
 grid-column: 2 / 4;
 grid-row: 2/4;
