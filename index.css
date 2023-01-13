@@ -251,6 +251,7 @@ body {
     grid-row-gap: 5px;
     grid-gap: 10px 20px;
     justify-items: center;
+    align-items: end;
   }
 
 
