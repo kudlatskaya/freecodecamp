@@ -112,12 +112,20 @@ class Thermostat {
   console.log(dog.name);
   console.log(dog.numLegs);
 
-  let dog = {
+  let dog1 = {
     name: "Spot",
     numLegs: 4,
   sayLegs: function() {
-    return `This dog has ${dog.numLegs} legs`;
+    return `This dog has ${dog1.numLegs} legs`;
   }
   };
   
-  dog.sayLegs();
+  dog1.sayLegs();
+
+  let dog2 = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+  };
+  
+  dog2.sayLegs();
