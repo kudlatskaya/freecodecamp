@@ -129,3 +129,9 @@ class Thermostat {
   };
   
   dog2.sayLegs();
+
+  function Dog() {
+    this.name = "Albert";
+    this.color = "blue";
+    this.numLegs = 4;
+  }
