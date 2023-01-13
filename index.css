@@ -250,6 +250,7 @@ body {
     grid-column-gap: 20px;
     grid-row-gap: 5px;
     grid-gap: 10px 20px;
+    justify-items: center;
   }
 
 
