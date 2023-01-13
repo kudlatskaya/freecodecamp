@@ -244,4 +244,5 @@ body {
     width: 100%;
     background: LightGray;
     display: grid;
+    grid-template-columns: 100px 100px 100px;
   }
