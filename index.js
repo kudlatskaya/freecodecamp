@@ -311,6 +311,10 @@ class Thermostat{
 // Only change code above this line
 
 const thermos = new Thermostat(76); // Setting in Fahrenheit scale
-let temp = thermos.temperature; // 24.44 in Celsius
+let temp1 = thermos.temperature; // 24.44 in Celsius
 thermos.temperature = 26;
-temp = thermos.temperature; // 26 in Celsius
+temp1 = thermos.temperature; // 26 in Celsius
+
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result1 = myRegex.test(myString); // Change this line
