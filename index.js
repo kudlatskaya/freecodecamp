@@ -172,3 +172,36 @@ class Thermostat {
  
     return rest.reduce((a, b) => a + b, 0);
   }
+
+  const highTemperatures = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+  };
+  
+  // Only change code below this line
+  
+  const { today, tomorrow } = highTemperatures;
+  
+  // Only change code above this line
+
+  const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+  };
+ 
+  const {today:highToday, tomorrow:highTomorrow} = HIGH_TEMPERATURES;
+  
+  const LOCAL_FORECAST = {
+    yesterday: { low: 61, high: 75 },
+    today: { low: 64, high: 77 },
+    tomorrow: { low: 68, high: 80 }
+  };
+  
+  // Only change code below this line
+    
+  const { today:lowToday, tomorrow:highToday } = LOCAL_FORECAST;
+  
+  // Only change code above this line
+ 
