@@ -215,4 +215,7 @@ class Thermostat {
     
   const { today: { low:lowToday, high:highToday }, tomorrow: { low, high } } = LOCAL_FORECAST;
   
-  // Only change code above this line
+  let a = 8, b = 6;
+  // Only change code below this line
+   const [a, b] = [6, 8];
+   
