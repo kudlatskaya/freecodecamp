@@ -167,3 +167,8 @@ class Thermostat {
       ownProps.push(property);
     }
   }
+
+  const sum = (...rest) => {
+ 
+    return rest.reduce((a, b) => a + b, 0);
+  }
