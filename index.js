@@ -185,23 +185,23 @@ class Thermostat {
   
   // Only change code above this line
 
-  const HIGH_TEMPERATURES = {
-    yesterday: 75,
-    today: 77,
-    tomorrow: 80
-  };
+  // const HIGH_TEMPERATURES = {
+  //   yesterday: 75,
+  //   today: 77,
+  //   tomorrow: 80
+  // };
  
-  const {today:highToday, tomorrow:highTomorrow} = HIGH_TEMPERATURES;
+  // const {today:highToday, tomorrow:highTomorrow} = HIGH_TEMPERATURES;
   
-  const LOCAL_FORECAST = {
-    yesterday: { low: 61, high: 75 },
-    today: { low: 64, high: 77 },
-    tomorrow: { low: 68, high: 80 }
-  };
+  // const LOCAL_FORECAST = {
+  //   yesterday: { low: 61, high: 75 },
+  //   today: { low: 64, high: 77 },
+  //   tomorrow: { low: 68, high: 80 }
+  // };
   
-  // Only change code below this line
+  // // Only change code below this line
     
-  const { today:lowToday, tomorrow:highToday } = LOCAL_FORECAST;
+  // const { today:lowToday, tomorrow:highToday } = LOCAL_FORECAST;
   
   // Only change code above this line
  
@@ -215,9 +215,9 @@ class Thermostat {
     
   const { today: { low:lowToday, high:highToday }, tomorrow: { low, high } } = LOCAL_FORECAST;
   
-  let a = 8, b = 6;
-  // Only change code below this line
-   const [a, b] = [6, 8];
+  // let a = 8, b = 6;
+  // // Only change code below this line
+  //  const [a, b] = [6, 8];
 
    function removeFirstTwo(list) {
     // Only change code below this line
@@ -264,8 +264,20 @@ class Thermostat {
     // Only change code below this line
     return {
       name,
+
       age,
       gender
     };
     // Only change code above this line
   };
+
+  // Only change code below this line
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
